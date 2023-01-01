@@ -14,3 +14,5 @@ class detectionModel(models.Model):
     class Meta:
         db_table = 'detection'
 
+    def __str__(self):
+        return str(self.name)+" " + str(self.date)+" "  + str(self.time)

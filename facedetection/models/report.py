@@ -15,4 +15,5 @@ class reportModel(models.Model):
     
     class Meta:
         db_table = 'report'
-    
+    def __str__(self):
+        return str(self.typeReport)+" " + str(self.date)+" "  + str(self.time)
