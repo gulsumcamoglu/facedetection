@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
  {% block title %}
-    Detections Page          
+    Daily Report Page          
  {% endblock  %}
      
  
  {% block content %}
    
- {% for detection in  detections%}
+
  
  <div class="container mt-5">
    <div class="row">
@@ -19,15 +19,15 @@
                
                  <img src="{{detection.image.url}}" width="120">
                     <div class="card-body">
-                       <h5 class="card-title">{{detection.name}}</h5>
-                       <p class="card-text">{{detection.date}}</p>
-                       <p class="card-text">{{detection.time}}</p>
+                       <h5 class="card-title"></h5>
+                       <p class="card-text">daily report</p>
+                       <p class="card-text"></p>
                     </div>
           </div>
       </div>          
    </div>
  </div>
-{% endfor %}
+
 
  {% endblock  %}
                     

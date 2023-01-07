@@ -1,5 +1,7 @@
-from django.http import HttpResponse
 from django.shortcuts import render
-
+from facedetection.models import detectionModel
 def detections(request):
-    return render(request,'pages/detections.html',context={})
+    detections = detectionModel.objects.all()
+    return render(request,'pages/detections.html',context={
+        'detections' : detections
+    })
